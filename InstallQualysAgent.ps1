@@ -6,7 +6,7 @@ $SharedFolder = "" ## Shared folder where file is located
 $SharedFile = $SharedFolder + $filename
 $CustomerID = "" ##CustomerID from your key, from the Platform, go to the Cloud Agent app and locate the Agent Key to get CustomerID
 $ActivationID = "" ##ActivationID from your key, from the Platform, go to the Cloud Agent app and locate the Agent Key to get ActivationID
-$WebServiceUri = ""
+$WebServiceUri = "" ##WebServiceUri for the Cloud Agents can be retrieved from Help, About
 if ($service -eq $null) {
  ## Copies Qualys Agent from shared folder
  function CopyQualysAgent {
