@@ -2,11 +2,11 @@
 $filepath = "C:\Windows\Temp\QualysIntall\" ## Custom folder where packages should be downloaded to
 $filename = "QualysCloudAgent.exe"
 $fullfilepath = $filepath + $filename
-$SharedFolder = "\\WIN-7QFNS730LHG\QualysAgent\"
+$SharedFolder = "" ## Shared folder where file is located
 $SharedFile = $SharedFolder + $filename
-$CustomerID = "{857282f5-d79d-7dfa-81c2-223642cabb37}"
-$ActivationID = "{86ec2475-57d6-4ec1-90a4-bc56abbfb3ad}"
-$WebServiceUri = "https://qagpublic.qg3.apps.qualys.com/CloudAgent/"
+$CustomerID = "" ##CustomerID from your key, from the Platform, go to the Cloud Agent app and locate the Agent Key to get CustomerID
+$ActivationID = "" ##ActivationID from your key, from the Platform, go to the Cloud Agent app and locate the Agent Key to get ActivationID
+$WebServiceUri = ""
 if ($service -eq $null) {
  ## Copies Qualys Agent from shared folder
  function CopyQualysAgent {
